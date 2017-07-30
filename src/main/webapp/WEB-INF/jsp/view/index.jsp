@@ -21,6 +21,6 @@
 <br />
 <a href="centralLogout?url=http://localhost:8080/?forcepostlogouturlafteridp">central logout</a>
 <br /><br />
-profiles: {{profiles}}<br />
+profiles: ${profiles}<br />
 <br />
-sessionId: {{sessionId}}
+sessionId: ${sessionId}
