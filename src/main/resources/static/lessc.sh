@@ -8,5 +8,10 @@ lesser-watch -c 'lessc --source-map-map-inline | postcss --map | exorcist static
 // perfect command
 
 while inotifywait -r style.less; do
-    lessc ./style.less > ./bootstrap/dist/css/bootstrap.css --source-map-less-inline --source-map-map-inline
+    lessc  ./style.less > ./bootstrap/dist/css/bootstrap.css --source-map-less-inline --source-map-map-inline
+done
+
+@import (less) "topology_bk.css";
+while inotifywait -r style.less; do
+    lessc ./style.less > ./style.css --source-map-less-inline --source-map-map-inline
 done
